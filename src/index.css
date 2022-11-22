@@ -100,9 +100,9 @@ nav .menu-btn,
 font-family: 'Montserrat';
 width: 500px;
   position: absolute;
-    left: 40%;
+    left: 45%;
     text-align: center;
-  top: 35%;
+  top: 37%;
 transform: translate(-50%,-50%);
 
 }
@@ -123,7 +123,8 @@ color:#ffffff;
 .header-btns{
   display: flex;
   margin-top: 40px;
-  margin-left: 6.8em;
+  margin-left: 4em;
+  gap: 40px;
 }
 .cv-btn{
   font-size: 14px;
@@ -171,7 +172,7 @@ background-color:  var(--secondary-color);
   gap: 5rem;
   position: absolute;
   right: 600px; 
-  top: 50px; 
+  top: 150px; 
 }
 
 .linkedin{
