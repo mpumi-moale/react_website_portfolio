@@ -26,3 +26,11 @@ react-icon & react-scroll
 
 ### `npm install react-scroll`
 
+Future Features
+
+####  add serives, project demo, Testimonails 
+####  add Whatsapp connection
+#### add email messages
+
+
+
