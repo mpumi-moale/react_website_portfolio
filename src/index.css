@@ -394,16 +394,16 @@ footer li {
   gap: 2rem;
   margin: 0 auto 3rem;
   cursor: pointer;
-  padding-right: 4rem;
+  padding-right: 6rem;
 }
 
 .footer_socials {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 4rem;
   cursor: pointer;
-  padding-right: 2rem ;
+  padding-right: 4.5rem ;
 }
 
 .footer_socials a {
@@ -417,4 +417,5 @@ footer li {
 
 .footer_copyright {
   color: var(--main-color);
+  padding-right: 70px;
 }
