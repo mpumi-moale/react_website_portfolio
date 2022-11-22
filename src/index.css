@@ -1,13 +1,419 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --main-color: #b3cde0;
+  --secondary-color: #d0ff00;
+  --box-shadow: 5px 10px 30px rgba(189, 198, 64, 0.411)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0px;
+  padding: 0px;
+  
+  background-color: #0f0f0f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+button{
+  outline: none;
+  border: none;
+}
+input{
+  outline: none;
+  border: none;
+}
+.logo img{
+  width: 90px;
+}
+#main{
+  width:100%;
+  height:850px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/bbackground.jpg");
+  margin-top: 60px;
+  
+}
+
+/************************** Navigation bar *********************************/
+
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+z-index: 1;
+background-color: #0f0f0f;
+
+}
+nav ul{
+display: flex;
+}
+.active{
+  background-color: var(--main-color);
+  color:#000000;
+box-shadow: var(--box-shadow);
+transition: all ease 0.2s;
+}
+nav ul li a{
+  font-family: calibri;
+height:40px;
+line-height: 43px;
+margin: 3px;
+padding: 0px 22px;
+display: flex;
+font-size: 0.8rem;
+text-transform: uppercase;
+font-weight: 500;
+color:#ffffff;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+
+nav ul li a:hover{
+background-color: #b3cde0;
+  color:#000000;
+box-shadow: var(--box-shadow);
+transition: all ease 0.2s;
+}
+nav .menu-btn,
+.menu-icon{
+  display:none;
+}
+.name{
+font-family: 'Montserrat';
+width: 500px;
+  position: absolute;
+    left: 40%;
+    text-align: center;
+  top: 35%;
+transform: translate(-50%,-50%);
+
+}
+.name span{
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+.name .details{
+  color: #969696;
+}
+.name h1{
+font-family:'Montserrat';
+font-size: 43px;
+margin:0px;
+letter-spacing: 3px;
+color:#ffffff;
+}
+.header-btns{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 6.8em;
+}
+.cv-btn{
+  font-size: 14px;
+  width:140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color:#ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.cv-btn1{
+  font-size: 14px;
+  width:140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color:#ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.cv-btn:hover{
+  background-color: var(--main-color);
+  color: #000000;
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.5s;
+}
+.cv-btn1:hover{
+background-color:  var(--secondary-color);
+  transition: all ease 0.5s;
+  color: #000266;
+}
+
+/*************************Socail Media Icons *****************************/
+.header_socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  position: absolute;
+  right: 600px; 
+  top: 50px; 
+}
+
+.linkedin{
+  color: var(--main-color);
+  transition: all ease 0.2s;
+}
+
+.linkedin:hover{
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.2s;
+}
+
+.github{
+  color: var(--main-color);
+  transition: all ease 0.2s;
+}
+
+.github:hover{
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.2s;
+}
+
+.gitlab{
+  color: var(--main-color);
+  transition: all ease 0.2s;
+}
+
+.gitlab:hover{
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.2s;
+}
+
+/************************** About Me section *********************************/
+
+.about-me-heading h1{
+  color:#FFFFFF;
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 0px;
+
+}
+.about-me-heading p{
+  color:rgba(247, 247, 247, 0.678);
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 0px;
+}
+.about-me-heading{
+  padding-left: 12rem;
+  margin-top: 60px;
+  margin-bottom: -120px;
+}
+
+#about-me p2 {
+  padding-left: 6rem;
+  padding-top: 3rem;
+  color: var(--main-color);
+}
+
+
+.about-me-heading h1 {
+  color: var(--secondary-color);
+}
+
+.about-me-heading p {
+  color: var(--main-color);
+}
+
+.about_content {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  padding-top: 8rem;
+  padding-left: 12rem;
+}
+
+
+.about_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem  ;
+}
+
+.about_card {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  background: transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #ffffff;
+  color:#ffffff;
+}
+
+.about_card h5 {
+  font-size: 0.95rem;
+}
+
+.about_card:hover h5 {
+  color: var(--secondary-color);
+}
+
+.about_card:hover{
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+.about_card small {
+  font-size: 0.7rem;
+}
+
+.about_content p {
+  padding-left: 2rem;
+}
+
+
+/************************ Contact Me  ********************************/
+.contact-heading h1{
+  color:#FFFFFF;
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 0px;
+
+}
+.contact-heading p{
+  color:rgba(247, 247, 247, 0.678);
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 0px;
+}
+.contact-heading{
+  padding-left: 12rem;
+  margin-top: 60px;
+  margin-bottom: -120px;
+}
+
+
+.contact-heading h1 {
+  color: var(--secondary-color);
+}
+
+.contact-heading p {
+  color: var(--main-color);
+}
+
+
+.container.contact_container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  padding-top: 9rem;
+  padding-left: 12rem;
+}
+ 
+/*============== Form ==========*/
+.contact_container {
+  padding-left: 10rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-right: -10rem;
+}
+
+form .submit-btn {
+  font-size: 14px;
+  width:140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  color:#ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+form .submit-btn:hover {
+  background-color: var(--secondary-color);
+  color: #000000;
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.5s;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  resize: none;
+  color: var(--main-color);
+}
+
+/************************** Footer section *********************************/
+footer {
+  background: transparent;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+footer a {
+  color: var(--main-color);
+}
+
+footer li {
+  counter-reset: var(--main-color);
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  cursor: pointer;
+  padding-right: 4rem;
+}
+
+.footer_socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  padding-right: 2rem ;
+}
+
+.footer_socials a {
+  background-color: #000000;
+  color: var(--main-color);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid var(--secondary-color);
+}
+
+.footer_copyright {
+  color: var(--main-color);
 }
