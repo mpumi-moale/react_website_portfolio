@@ -14,9 +14,9 @@ function Footer() {
         </ul>
 
         <div className="footer_socials">
-            <a href="https://facebook.com"><FaFacebookF/></a>
-            <a href="https://Instagram.com"><FiInstagram/></a>
-            <a href="https://twitter.com"><AiOutlineTwitter/></a>
+            <a href="https://www.facebook.com/mpumi.moale" target='_blank'><FaFacebookF/></a>
+            <a href="https://www.instagram.com/mpumi_moale/" target='_blank'><FiInstagram/></a>
+            <a href="https://twitter.com/moalempumi5" target='_blank'><AiOutlineTwitter/></a>
         </div>
 
         <div className='footer_copyright'>

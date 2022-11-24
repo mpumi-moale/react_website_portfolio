@@ -19,12 +19,17 @@ You may also see any lint errors in the console.
 
 `react-website-portfolio.vercel.app`
 
-#### External parties 
-react-icon & react-scroll
+#### How to bootstrap
 
-### `npm install react-icons --save`
 
-### `npm install react-scroll`
+react-icon
+#### `npm install react-icons --save`
+
+react-scroll
+#### `npm install react-scroll`
+
+mailjs
+#### `npm install emailjs-com --save`
 
 Future Features
 
