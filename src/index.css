@@ -6,36 +6,40 @@
   --box-shadow: 5px 10px 30px rgba(189, 198, 64, 0.411)
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin:0px;
   padding: 0px;
-  
   background-color: #0f0f0f;
   font-family: 'Montserrat', sans-serif;
 }
 
-ul{
+ul {
   list-style: none;
-}
-a{
+} 
+
+a {
   text-decoration: none;
-}
-button{
+} 
+
+button {
   outline: none;
   border: none;
 }
-input{
+
+input {
   outline: none;
   border: none;
 }
-.logo img{
+
+.logo img {
   width: 90px;
 }
-#main{
+
+#main {
   width:100%;
   height:850px;
   position: relative;
@@ -43,90 +47,100 @@ input{
   background-size: cover;
   background-image: url("images/bbackground.jpg");
   margin-top: 60px;
-  
 }
 
 /************************** Navigation bar *********************************/
 
-nav{
-display: flex;
-justify-content: space-around;
-align-items: center;
-box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
-position: fixed;
-left: 0;
-top: 0;
-width:100%;
-z-index: 1;
-background-color: #0f0f0f;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  z-index: 1;
+  background-color: #0f0f0f;
+}
 
+nav ul {
+  display: flex;
 }
-nav ul{
-display: flex;
-}
-.active{
+
+.active {
   background-color: var(--main-color);
   color:#000000;
-box-shadow: var(--box-shadow);
-transition: all ease 0.2s;
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.2s;
 }
-nav ul li a{
+
+.active:hover {
+  cursor: pointer;
+}
+
+nav ul li a {
   font-family: calibri;
-height:40px;
-line-height: 43px;
-margin: 3px;
-padding: 0px 22px;
-display: flex;
-font-size: 0.8rem;
-text-transform: uppercase;
-font-weight: 500;
-color:#ffffff;
+  height:40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:#ffffff;
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s ease-in-out;
 }
 
-nav ul li a:hover{
-background-color: #b3cde0;
+nav ul li a:hover {
+  background-color: #b3cde0;
   color:#000000;
-box-shadow: var(--box-shadow);
-transition: all ease 0.2s;
+  box-shadow: var(--box-shadow);
+  transition: all ease 0.2s;
 }
-nav .menu-btn,
-.menu-icon{
+
+nav .menu-btn, .menu-icon {
   display:none;
 }
-.name{
-font-family: 'Montserrat';
-width: 500px;
-  position: absolute;
-    left: 45%;
-    text-align: center;
-  top: 37%;
-transform: translate(-50%,-50%);
 
+.name {
+  font-family: 'Montserrat';
+  width: 500px;
+  position: absolute;
+  left: 45%;
+  text-align: center;
+  top: 37%;
+  transform: translate(-50%,-50%);
 }
-.name span{
+
+.name span {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
-.name .details{
+
+.name .details {
   color: var(--main-color);
 }
-.name h1{
-font-family:'Montserrat';
-font-size: 43px;
-margin:0px;
-letter-spacing: 3px;
-color:#ffffff;
+
+.name h1 {
+  font-family:'Montserrat';
+  font-size: 43px;
+  margin:0px;
+  letter-spacing: 3px;
+  color:#ffffff;
 }
-.header-btns{
+
+.header-btns {
   display: flex;
   margin-top: 40px;
   margin-left: 4em;
   gap: 40px;
 }
-.cv-btn{
+
+.cv-btn {
   font-size: 14px;
   width:140px;
   height: 40px;
@@ -139,7 +153,8 @@ color:#ffffff;
   border-radius: 10px;
   margin-left: 20px;
 }
-.cv-btn1{
+
+.cv-btn1 {
   font-size: 14px;
   width:140px;
   height: 40px;
@@ -152,20 +167,22 @@ color:#ffffff;
   border-radius: 10px;
   margin-left: 20px;
 }
-.cv-btn:hover{
+
+.cv-btn:hover {
   background-color: var(--main-color);
   color: #000000;
   box-shadow: var(--box-shadow);
   transition: all ease 0.5s;
 }
-.cv-btn1:hover{
+
+.cv-btn1:hover {
 background-color:  var(--secondary-color);
   transition: all ease 0.5s;
   color: #000266;
 }
 
 /*************************Socail Media Icons *****************************/
-.header_socials{
+.header_socials {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,52 +192,53 @@ background-color:  var(--secondary-color);
   top: 150px; 
 }
 
-.linkedin{
+.linkedin {
   color: var(--main-color);
   transition: all ease 0.2s;
 }
 
-.linkedin:hover{
+.linkedin:hover {
   box-shadow: var(--box-shadow);
   transition: all ease 0.2s;
 }
 
-.github{
+.github {
   color: var(--main-color);
   transition: all ease 0.2s;
 }
 
-.github:hover{
+.github:hover {
   box-shadow: var(--box-shadow);
   transition: all ease 0.2s;
 }
 
-.gitlab{
+.gitlab {
   color: var(--main-color);
   transition: all ease 0.2s;
 }
 
-.gitlab:hover{
+.gitlab:hover {
   box-shadow: var(--box-shadow);
   transition: all ease 0.2s;
 }
 
 /************************** About Me section *********************************/
 
-.about-me-heading h1{
+.about-me-heading h1 {
   color:#FFFFFF;
   font-size: 2.5rem;
   margin: 0px;
   padding: 0px;
-
 }
-.about-me-heading p{
+
+.about-me-heading p {
   color:rgba(247, 247, 247, 0.678);
   font-size: 1rem;
   margin-top: 10px;
   padding: 0px;
-}
-.about-me-heading{
+} 
+
+.about-me-heading {
   padding-left: 12rem;
   margin-top: 60px;
   margin-bottom: -120px;
@@ -274,7 +292,7 @@ background-color:  var(--secondary-color);
   color: var(--secondary-color);
 }
 
-.about_card:hover{
+.about_card:hover {
   border: 1px solid var(--secondary-color);
   cursor: pointer;
 }
@@ -289,20 +307,22 @@ background-color:  var(--secondary-color);
 
 
 /************************ Contact Me  ********************************/
-.contact-heading h1{
+.contact-heading h1 {
   color:#FFFFFF;
   font-size: 2.5rem;
   margin: 0px;
   padding: 0px;
 
 }
-.contact-heading p{
+
+.contact-heading p {
   color:rgba(247, 247, 247, 0.678);
   font-size: 1rem;
   margin-top: 10px;
   padding: 0px;
 }
-.contact-heading{
+
+.contact-heading {
   padding-left: 12rem;
   margin-top: 60px;
   margin-bottom: -120px;

@@ -28,12 +28,13 @@ react-icon
 react-scroll
 #### `npm install react-scroll`
 
-mailjs
+emailjs
 #### `npm install emailjs-com --save`
 
 Future Features
 
 ####  add serives, project demo, Testimonails sections
+####  update Responsive Design
 
 
 
