@@ -33,9 +33,9 @@ mailjs
 
 Future Features
 
-####  add serives, project demo, Testimonails 
-####  add Whatsapp connection
-#### add email messages
+####  add serives, project demo, Testimonails sections
+
+
 
 
 
